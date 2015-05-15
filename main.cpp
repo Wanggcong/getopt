@@ -1,3 +1,15 @@
+#include <string>
+#include <getopt.h>
+#include <unistd.h>
+
+
+void usage( const char* name )
+{
+}
+
+
+int main( int argc, char* argv[] )
+{
     std::string filter_port;
     std::string interface;
     std::string mcast_ip;
@@ -60,3 +72,5 @@
                 return 1;
         }
     } // while
+
+} // main()
